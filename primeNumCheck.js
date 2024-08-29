@@ -1,10 +1,10 @@
 function primeNumValidator(num){
     let control = 0
-    for(let i = 1; i <= num; i++){
+    for(let i = 2; i <= Math.sqrt(num); i++){
         if(num % i == 0){
             control++;
         };
+        if(control > 0) return false;
     };
-    if(control > 2) return false;
-    else return true;
+    return true;
 };
