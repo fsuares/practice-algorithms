@@ -8,3 +8,14 @@ function primeNumValidator(num){
     };
     return true;
 };
+
+const main = function(max){
+    for(let i = 1; i <= max; i++){
+        if(primeNumValidator(i)){
+            console.log(`${i} é primo`);
+        };
+    };
+};
+
+main(100)
+
